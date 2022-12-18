@@ -15,9 +15,8 @@
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
-		"eslint": "^8.28.0",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-svelte": "^2.13.1",
+		"eslint": "^8.30.0",
+		"eslint-plugin-svelte": "^2.14.1",
 		"svelte": "^3.53.1",
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.6",
@@ -25,8 +24,5 @@
 		"typescript": "^4.7.4",
 		"vite": "^3.1.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"@detachhead/smui-top-app-bar": "^7.0.0-beta.0-7aa154b58dd17d39757ade237397a003da4f0bdc"
-	}
+	"type": "module"
 }

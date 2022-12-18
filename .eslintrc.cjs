@@ -1,9 +1,17 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
-  extends: ["plugin:svelte/recommended", "plugin:import/recommended"],
-  plugins: ["svelte3", "@typescript-eslint"],
+  plugins: ["@typescript-eslint"],
   ignorePatterns: ["*.cjs"],
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': [ '.ts', '.tsx', '.cts', '.mts' ],
+      'espree': [ '.js', 'jsx', '.cjs', '.mjs' ],
+    }
+  },
+  rules: {
+    "spaced-comment": "error"
+  },
   overrides: [
     {
       files: ["*.svelte"],
@@ -12,16 +20,5 @@ module.exports = {
         parser: "@typescript-eslint/parser",
       },
     },
-  ],
-  parserOptions: {
-    sourceType: "module",
-    ecmaVersion: 2020,
-    project: "tsconfig.json",
-    extraFileExtensions: [".svelte"],
-  },
-  env: {
-    browser: true,
-    es2017: true,
-    node: true,
-  },
+  ]
 };

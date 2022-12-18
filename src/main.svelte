@@ -1,3 +1,3 @@
-<script lang="ts">
-    import TopAppBar from '@detachhead/smui-top-app-bar'
-</script>
+{#each f(
+//asdf
+d) as k}<Csdf></Csdf>{/each}
