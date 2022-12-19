@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
+  "extends": ["plugin:svelte/recommended", "plugin:eslint-comments/recommended"],
   plugins: ["@typescript-eslint"],
   ignorePatterns: ["*.cjs"],
   settings: {
@@ -10,7 +11,8 @@ module.exports = {
     }
   },
   rules: {
-    "spaced-comment": "error"
+    'svelte/html-self-closing':'error',
+    'eslint-comments/require-description': 'error'
   },
   overrides: [
     {
